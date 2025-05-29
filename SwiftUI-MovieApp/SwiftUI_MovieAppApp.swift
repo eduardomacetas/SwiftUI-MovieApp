@@ -9,9 +9,21 @@ import SwiftUI
 
 @main
 struct SwiftUI_MovieAppApp: App {
+    @StateObject private var favoritesManager = FavoritesManager()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                MovieListView()
+                    .tabItem {
+                        Label("Movies", systemImage: "film")
+                    }
+                FavoritesView()
+                    .tabItem {
+                        Label("Favorites", systemImage: "heart.fill")
+                    }
+            }
+            .environmentObject(favoritesManager)
         }
     }
 }

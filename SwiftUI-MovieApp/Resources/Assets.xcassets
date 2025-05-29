@@ -1,0 +1,16 @@
+//
+//  Assets.xcassets
+//  SwiftUI-MovieApp
+//
+//  Created by Eduardo Macetas on 5/28/25.
+//
+
+struct Movie: Identifiable, Codable {
+    let id: Int
+    let title: String
+    let description: String
+    let posterPath: String
+    let rating: Double
+    let releaseDate: String
+    var isFavorite: Bool = false
+}
