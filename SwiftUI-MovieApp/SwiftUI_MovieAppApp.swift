@@ -18,6 +18,10 @@ struct SwiftUI_MovieAppApp: App {
                     .tabItem {
                         Label("Movies", systemImage: "film")
                     }
+                SearchView()
+                    .tabItem {
+                        Label("Search", systemImage: "magnifyingglass")
+                    }
                 FavoritesView()
                     .tabItem {
                         Label("Favorites", systemImage: "heart.fill")

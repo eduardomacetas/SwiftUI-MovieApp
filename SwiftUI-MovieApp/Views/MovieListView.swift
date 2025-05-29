@@ -14,9 +14,9 @@ struct MovieListView: View {
         NavigationView {
             VStack {
                 // Barra de búsqueda
-                TextField("Search movie...", text: $viewModel.searchQuery)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
+//                TextField("Search movie...", text: $viewModel.searchQuery)
+//                    .textFieldStyle(RoundedBorderTextFieldStyle())
+//                    .padding()
 
                 if viewModel.isLoading {
                     ProgressView("Cargando...")
